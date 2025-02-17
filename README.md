@@ -35,7 +35,7 @@ git clone https://github.com/sofronz/simple-rest-api.git
 Navigate to the project directory and run:
 
 ```bash
-cd repository-name
+cd simple-rest-api
 composer install
 ```
 
