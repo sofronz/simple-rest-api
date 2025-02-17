@@ -4,13 +4,15 @@ namespace App\Builders\User;
 use Illuminate\Http\Request;
 use App\Interfaces\Builder\Query;
 use App\Interfaces\UserInterface;
-use App\Builders\Subscriber\Filters\Age;
+use App\Builders\User\Filters\Age;
+use App\Builders\User\Filters\Search;
 use Illuminate\Database\Eloquent\Builder;
-use App\Builders\Subscriber\Filters\Search;
 
 class UserQuery implements Query
 {
     /**
+     * Apply filters and conditions to the user query based on the provided request.
+     *
      * @param Request $request
      *
      * @return Builder

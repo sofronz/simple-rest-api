@@ -15,6 +15,7 @@ class UserService implements UserInterface
     /**
      * UserService Constructor
      *
+     * Initializes the service with the User model.
      */
     public function __construct()
     {
@@ -22,6 +23,8 @@ class UserService implements UserInterface
     }
 
     /**
+     * Retrieve a new query builder for the User model.
+     *
      * @return Builder
      */
     public function listUsers(): Builder
@@ -30,6 +33,8 @@ class UserService implements UserInterface
     }
 
     /**
+     * Create a new user in the database.
+     *
      * @param array $data
      *
      * @return User
@@ -44,6 +49,8 @@ class UserService implements UserInterface
     }
 
     /**
+     * Find a user by a specific key and value.
+     *
      * @param string $key
      * @param string $value
      *
@@ -55,6 +62,8 @@ class UserService implements UserInterface
     }
 
     /**
+     * Update a user's data by ID.
+     *
      * @param array $data
      * @param string $id
      *
@@ -74,6 +83,8 @@ class UserService implements UserInterface
     }
 
     /**
+     * Delete a user by ID.
+     *
      * @param string $id
      *
      * @return bool
