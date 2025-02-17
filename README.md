@@ -15,7 +15,7 @@ For detailed API documentation, please refer to the [API Documentation](https://
 
 ## Requirements
 
-- PHP >= 8.3
+- PHP >= 8.2
 - Composer
 - Laravel 11.x or higher
 - MySQL or any other database supported by Laravel
